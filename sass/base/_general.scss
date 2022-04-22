@@ -1,0 +1,61 @@
+// @import 'colors';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+html {
+	font-size: 10px;
+}
+
+ul[class],
+ol[class] {
+	list-style: none;
+}
+
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+body {
+	font-family: 'League Spartan', sans-serif;
+	background-color: #fff;
+	min-height: 100vh;
+	margin-top: 3em;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+
+	@media (min-width: 50em) {
+		margin-top: 7.5em;
+	}
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

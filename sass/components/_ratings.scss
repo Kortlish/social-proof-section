@@ -1,0 +1,52 @@
+.ratings {
+	display: flex;
+	flex-direction: column;
+	gap: 3em;
+
+	// @media (min-width: 45em) {
+	// 	justify-content: center;
+	// 	align-items: center;
+	// }
+}
+
+.rating {
+	margin-left: auto;
+	margin-right: auto;
+	background: $white;
+	border-radius: 2em;
+	// max-width: 30rem;
+	.stars {
+		display: flex;
+		justify-content: center;
+
+		img {
+			width: 15px;
+			height: 14px;
+			margin: 0.3em;
+		}
+	}
+
+	.rating-title {
+		font-weight: 700;
+		color: $xdk-magenta;
+		margin-top: 1em;
+		font-size: 1.3rem;
+
+		@media (min-width: 50em) {
+			margin-left: 1em;
+		}
+	}
+
+	@media (min-width: 50em) {
+		display: flex;
+		align-items: center;
+
+		&:nth-child(1) {
+			transform: translateX(-5em);
+		}
+
+		&:nth-child(3) {
+			transform: translateX(3.5em);
+		}
+	}
+}

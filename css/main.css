@@ -1,0 +1,311 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  background-color: #fff;
+  min-height: 100vh;
+  margin-top: 3em;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+@media (min-width: 50em) {
+  body {
+    margin-top: 7.5em;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+}
+
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3em;
+}
+
+.rating {
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  border-radius: 2em;
+}
+
+.rating .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rating .stars img {
+  width: 15px;
+  height: 14px;
+  margin: 0.3em;
+}
+
+.rating .rating-title {
+  font-weight: 700;
+  color: #502050;
+  margin-top: 1em;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 50em) {
+  .rating .rating-title {
+    margin-left: 1em;
+  }
+}
+
+@media (min-width: 50em) {
+  .rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rating:nth-child(1) {
+    -webkit-transform: translateX(-5em);
+            transform: translateX(-5em);
+  }
+  .rating:nth-child(3) {
+    -webkit-transform: translateX(3.5em);
+            transform: translateX(3.5em);
+  }
+}
+
+.quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3em;
+}
+
+.quotes li {
+  height: 100%;
+}
+
+@media (min-width: 50em) {
+  .quotes li:nth-child(2) {
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  .quotes li:nth-child(3) {
+    -webkit-transform: translateY(6rem);
+            transform: translateY(6rem);
+  }
+}
+
+.quotes blockquote {
+  padding: 2rem;
+  background-color: #502050;
+  border-radius: 0.5em;
+  font-size: 0.9625rem;
+  font-weight: 400;
+  color: #f7f2f7;
+  height: 100%;
+  max-width: 50em;
+}
+
+.quotes img {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.quotes .name {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.quotes .status {
+  color: #ee68a4;
+  font-size: 1.3rem;
+}
+
+.quotes .quote {
+  margin-top: 2rem;
+  margin-right: 1em;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 50em) {
+  .quotes {
+    margin-top: 5em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .quotes blockquote {
+    padding-top: 3em;
+  }
+  .quotes .quote {
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+  }
+}
+
+main {
+  padding: 2em;
+  padding-top: 5em;
+  max-width: 120em;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  gap: 3em;
+}
+
+main .main-header {
+  font-size: 2.5rem;
+  max-width: 12ch;
+  line-height: 1;
+  color: #502050;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 50em) {
+  main .main-header {
+    font-size: 5rem;
+    text-align: left;
+    margin: 0;
+  }
+}
+
+main .subtitle {
+  margin-top: 1em;
+  font-size: 1.5rem;
+  color: #937b92;
+}
+
+@media (min-width: 50em) {
+  main .subtitle {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 50em) {
+  main {
+    gap: 3em;
+    -ms-grid-columns: 1fr 1.5fr;
+        grid-template-columns: 1fr 1.5fr;
+  }
+  main .intro {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  main .ratings {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .quotes {
+    grid-column: 1 / -1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
